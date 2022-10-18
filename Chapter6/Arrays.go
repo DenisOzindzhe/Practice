@@ -9,9 +9,14 @@ func main() {
 	fmt.Println("Оценки пользователя =", score)
 
 	total := 1.0
-
-	for i := 0; i < len(score); i++ {
-		total += score[i]
+	/*
+		Долгий способ записи цикла
+		for i := 0; i < len(score); i++ {
+			total += score[i]
+		}
+	*/
+	for _, value := range score {
+		total += value
 	}
 	//Приведение типа в Go, используем название типа как функцию
 	total = total / float64(len(score))
