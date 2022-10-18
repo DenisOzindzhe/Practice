@@ -22,4 +22,8 @@ func main() {
 	total = total / float64(len(score))
 	fmt.Println("Средний балл пользователя = ", total)
 
+	x := [6]string{"a", "b", "c", "d", "e", "f"}
+	var a []string = x[2:5]
+	println(a)
+
 }
