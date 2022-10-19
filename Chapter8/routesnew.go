@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	ptrX := new(int)
 	some(ptrX)
-	fmt.Println(*ptrX) //5
+	fmt.Println(*ptrX) // . 5
 
 }
 func some(ptrX *int) {
